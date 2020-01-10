@@ -5,6 +5,12 @@
     <packaging>pom</packaging>
     <modules>
         <module>Eureka_Server</module>
+        <module>Surplus_Common</module>
+        <module>Surplus_Entity</module>
+        <module>Surplus_Zuul</module>
+        <module>Surplus_Api</module>
+        <module>Surplus_UserProvider</module>
+        <module>Surplus_IndexProvider</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -30,10 +36,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
@@ -82,13 +85,5 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
